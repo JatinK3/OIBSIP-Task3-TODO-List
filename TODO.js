@@ -67,4 +67,5 @@ document.getElementById("show-bin-btn").addEventListener("click", function() {
 
 document.getElementById("clear-bin-btn").addEventListener("click", function() {
   const binTasks = document.getElementById("task-bin");
+   binTasks.innerHTML = ""
 });
