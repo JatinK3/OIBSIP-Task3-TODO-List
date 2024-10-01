@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced To-Do</title>
+  <link rel="stylesheet" href="/TODO.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+
+    <div class="input-container">
+      <input type="text" id="task-input" placeholder="Add a new task...">
+      <input type="datetime-local" id="task-time">
+      <button id="add-task-btn">Add Task</button>
+      <button id="clear-bin-btn">Clear Bin</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" id="pending-tab-btn">Pending Tasks</button>
+      <button class="tab-btn" id="completed-tab-btn">Completed Tasks</button>
+    </div>
+
+    <div class="tasks-section" id="pending-section">
+      <h2>Pending Tasks</h2>
+      <ul id="pending-tasks" class="task-list"></ul>
+    </div>
+
+    <div class="tasks-section hidden" id="completed-section">
+      <h2>Completed Tasks</h2>
+      <ul id="completed-tasks" class="task-list"></ul>
+    </div>
+
+    <div class="tasks-section">
+      <button id="show-log-btn">Log</button>
+      <button id="show-bin-btn">Bin</button>
+    </div>
+    <div class="tasks-section">
+      <h2>Task Log (Completed)</h2>
+      <ul id="task-log" class="task-list hidden"></ul>
+    </div>
+
+    <div class="tasks-section">
+      <h2>Task Bin (Deleted)</h2>
+      <ul id="task-bin" class="task-list hidden"></ul>
+    </div>
+  </div>
+  <script src="/TODO.js"></script>
+</body>
+</html>
